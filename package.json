@@ -9,7 +9,7 @@
         "url": "https://github.com/Klickrent/zlab-style-guide.git"
     },
     "scripts": {
-        "build": "npm install && node-sass --include-path scss /app/scss/main.scss /dist/css/main.css",
+        "build": "npm install && node-sass --include-path scss /app/src/scss/main.scss /dist/css/main.css",
         "watch": "nodemon -e scss -x \"npm run build\""
     },
     "devDependencies": {

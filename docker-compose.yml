@@ -8,4 +8,4 @@ services:
     working_dir: /app
     volumes:
       - ./dist:/dist
-      - ./src:/app
+      - ./:/app

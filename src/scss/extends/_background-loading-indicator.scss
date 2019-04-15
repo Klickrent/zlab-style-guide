@@ -1,0 +1,8 @@
+%background-loading-indicator {
+    background: url(~images/spinner.gif) center center no-repeat;
+    background-size: 100% 100%;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    z-index: 22;
+}

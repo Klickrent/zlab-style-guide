@@ -1,0 +1,42 @@
+// Breadcrumbs
+.breadcrumb {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  margin-bottom: 14px;
+
+  .breadcrumb-item {
+    line-height: normal;
+    font-size: 12px;
+    letter-spacing: .3px;
+
+    &::before {
+      display: inline-block;
+      padding-right: 2px;
+      padding-left: 4px;
+      color: $color-gray;
+    }
+
+    &:only-child {
+      &::before {
+        padding-left: 0;
+        content: '«';
+      }
+    }
+
+    &.active {
+      color: $color-dark;
+    }
+
+    + .breadcrumb-item {
+      &::before {
+        content: '»';
+      }
+    }
+
+    a {
+      color: $color-gray;
+      text-decoration: none;
+    }
+  }
+}

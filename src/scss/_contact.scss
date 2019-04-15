@@ -1,0 +1,63 @@
+// Contact
+.contact__form {
+  .multiselect {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.contact__wrapper {
+  .divider-horizontal {
+    margin-bottom: 22px;
+    margin-top: 20px;
+  }
+
+  .contact__channel-info {
+    .h4 {
+      margin-bottom: 28px;
+    }
+
+    .flex-row {
+      margin-bottom: 30px;
+    }
+
+    .zamicon {
+      margin-right: 15px;
+
+      &:before {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .form-title {
+    &.h4 {
+      margin-bottom: 26px;
+    }
+  }
+}
+
+.contact__wrapper-mobile {
+  padding: 60px 16px 0 16px;
+
+  .contact__channel-info {
+    text-align: center;
+
+    .title {
+      margin-bottom: 39px;
+      margin-top: 29px;
+    }
+
+    .zamicon {
+      &:before {
+        color: $color-white;
+      }
+    }
+  }
+
+  .form-title {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,12 @@
+.tag {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-right: 5px;
+    line-height: 1.33;
+
+    &-default {
+        color: $color-white;
+        background-color: $color-medium-gray;
+    }
+}

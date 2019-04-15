@@ -1,0 +1,64 @@
+.dg-backdrop {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5000;
+}
+.dg-container {
+    background: white;
+    z-index: 5001;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    max-width: 90%;
+    border-radius: .125rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+
+    @media screen and (min-width: 480px) {
+        max-width: 460px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 500px;
+    }
+
+    .dg-content-body {
+        @include fontRoboto(16px, normal, normal, normal, 0.15px);
+        line-height: 24px;
+        color: $color-dark;
+        padding: 21px 24px 24px;
+
+        .dg-title {
+            @include fontRoboto(20px, 500, normal, normal, 0.15px);
+            line-height: 28px;
+            margin-top: 0;
+        }
+    }
+
+    .dg-content-footer {
+        padding: 8px 8px 8px 24px;
+        text-align: right;
+
+        .dg-btn {
+            @include fontRoboto(14px, 500);
+            line-height: 1.14;
+            color: $color-primary;
+            text-transform: uppercase;
+            text-align: right;
+            border: none;
+            background: transparent;
+            display: inline-block;
+            cursor: pointer;
+            padding: 13px 24px 13px 30px;
+
+            &:hover, &:active {
+                color: $color-primary-dark;
+            }
+        }
+    }
+}

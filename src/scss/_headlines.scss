@@ -1,0 +1,105 @@
+// headline
+.h0,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin: 0;
+  padding: 0;
+  color: $color-dark;
+  @include fontRoboto();
+}
+
+.h0 {
+  font-family: Teko;
+  font-size: 72px;
+  font-stretch: normal;
+}
+
+.h0,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin: 10px 0;
+}
+
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: bold;
+  letter-spacing: 0.1px;
+}
+
+.h0,
+h2,
+.h2 {
+  letter-spacing: 0.7px;
+  line-height: 1;
+}
+
+h1,
+.h1 {
+  font-size: 46px;
+  line-height: 1.57;
+  letter-spacing: 0.4px;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: 0.6px;
+
+  &.underline-primary {
+    padding-bottom: 14px;
+    display: inline-block;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+h4,
+.h4 {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.8px;
+}
+
+h5,
+.h5 {
+  font-size: 12px;
+  line-height: 1.67;
+}
+
+h6,
+.h6 {
+  font-size: 10px;
+  line-height: 1.6;
+}

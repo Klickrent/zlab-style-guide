@@ -1,0 +1,74 @@
+.snackbar {
+  &-content {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: $color-white;
+    padding: 15px 12px;
+    margin: 0 16px 16px;
+
+    .btn-snackbar {
+      font-weight: 500;
+      text-transform: uppercase;
+      padding-left: 12px;
+      cursor: pointer;
+
+      &.is-loading {
+        color: #ddd;
+
+        &:after {
+          content: '…';
+          animation: fadein 0.46s infinite alternate;
+        }
+      }
+
+    }
+
+    .zamicon {
+      padding-right: 12px;
+
+      &:before {
+        color: $color-white;
+      }
+    }
+  }
+
+  &-success {
+    .snackbar-content {
+      background-color: $color-success;
+    }
+  }
+
+  &-danger {
+    .snackbar-content {
+      background-color: $color-danger;
+    }
+  }
+
+  &-info {
+    .snackbar-content {
+      background-color: $color-dark;
+
+      .btn-snackbar {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &-warning {
+    .snackbar-content {
+      background-color: $color-secondary;
+    }
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+

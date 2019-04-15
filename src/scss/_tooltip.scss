@@ -1,0 +1,14 @@
+.tooltip {
+  opacity: 1;
+  bottom: 90%;
+  margin-left: -16px;
+}
+
+.tooltip-inner {
+  background-color: $color-dark-gray;
+  border-radius: 5px;
+}
+
+.arrow {
+  margin-left: 50%;
+}

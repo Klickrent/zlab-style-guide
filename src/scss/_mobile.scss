@@ -1,0 +1,196 @@
+// Mobile
+.mobile-header {
+    background: $color-primary;
+    padding: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+
+    .form-group {
+        display: block;
+        margin: 0;
+
+        .form-control {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border: none;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+
+            font-size: 14px;
+            letter-spacing: normal;
+
+            &::placeholder {
+                line-height: 24px;
+                font-size: 14px;
+            }
+        }
+
+        .form-control-feedback {
+            top: 12px;
+        }
+    }
+
+    .input-group {
+        margin: 0;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+
+        .form-control {
+            line-height: 1.43;
+            font-size: 14px;
+            padding: 14px 8px;
+            background: none;
+            background-color: $color-lighter-gray;
+        }
+
+        .input-group-prepend,
+        .input-group-append {
+            button {
+                background-color: $color-lighter-gray;
+                border: none;
+                padding: 0 16px;
+                padding-top: 6px;
+
+            }
+        }
+        .input-group-prepend {
+            button {
+                border-bottom-left-radius: 4px;
+                border-top-left-radius: 4px;
+            }
+        }
+        .input-group-append {
+            button {
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+        }
+    }
+
+    .title-group {
+        position: relative;
+
+        .title {
+            padding: 8px 44px;
+            font-size: 20px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: $color-white;
+
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .zamicon {
+            position: absolute;
+            top: 12px;
+            right: 8px;
+            z-index: 2;
+            display: block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            pointer-events: none;
+
+            &::before {
+                color: $color-white;
+            }
+
+            &.zamicon-left {
+                left: 8px;
+            }
+        }
+    }
+
+    .tab-bar {
+        list-style: none;
+        margin: 8px -8px -8px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            a {
+                display: block;
+                padding: 15px 0;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: .5px;
+                line-height: normal;
+                color: $color-primary-light;
+                text-decoration: none;
+                text-align: center;
+
+                &.selected {
+                    color: $color-white;
+                    padding-bottom: 13px;
+                    border-bottom: 2px solid $color-secondary;
+                }
+            }
+
+            &.selected {
+                a {
+                    color: $color-white;
+                    padding-bottom: 13px;
+                    border-bottom: 2px solid $color-secondary;
+                }
+            }
+        }
+    }
+}
+
+.mobile-footer {
+    background-color: $color-white;
+    padding: 16px;
+
+    .btn {
+        margin-bottom: 0;
+    }
+}
+
+.mobile-navigation {
+    .small-text {
+        font-size: 11px;
+    }
+}
+
+.scan-page__ {
+    &back-button {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    &image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 200px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: 200px;
+    }
+
+    &info {
+        margin: 60px auto 30px auto;
+        text-align: center;
+        width: 200px;
+    }
+
+    &wrapper {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #D2F1FC;
+    }
+}

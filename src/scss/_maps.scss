@@ -1,0 +1,40 @@
+// Maps
+.maps-marker {
+  position: relative;
+  top: -107px;
+  left: 218px;
+  display: block;
+  background: transparent url(/static/images/icons/maps-flag.svg) top left no-repeat;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+}
+
+.info-card.card {
+    .maps-marker {
+        top: -63px;
+        left: 150px;
+        width: $maps-marker-width;
+        height: $maps-marker-height;
+        margin-left: -$maps-marker-width/2;
+        margin-top: -$maps-marker-height;
+        background-size: $maps-marker-width;
+    }
+}
+
+.site-detail {
+  .site-image {
+    max-width: $form-map-width;
+    width: 100%;
+    height: $form-map-height;
+    position: relative;
+    background: $color-light-gray $image-map-default-background center center no-repeat;
+    margin-bottom: 24px;
+  }
+
+  .maps-marker {
+    width: $maps-marker-width-xl;
+    height: $maps-marker-height-xl;
+    margin-left: -$maps-marker-width-xl/2;
+    margin-top: -$maps-marker-height-xl;
+    background-size: $maps-marker-width-xl;
+  }
+}

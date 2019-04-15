@@ -1,0 +1,11 @@
+version: '3.7'
+# Base configuration for Docker-Compose
+services:
+  # Build the frontend files for zlab-style-guide-frontend and run frontend tests
+  zlab-style-guide-build:
+    image: node
+    container_name: zlab-style-guide-build
+    working_dir: /app
+    volumes:
+      - ./dist:/dist
+      - ./src:/app

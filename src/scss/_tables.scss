@@ -1,0 +1,126 @@
+$border-color: #C6C7C7;
+
+// Table
+.table {
+  font-size: 14px;
+  line-height: 0.93;
+
+  thead {
+    th {
+      color: #373D3F;
+      font-weight: bold;
+      background-color: $color-lighter-gray;
+      border-bottom: 2px solid $color-primary;
+      padding: 18px 13px 18px 13px;
+      white-space: nowrap;
+
+      .zamicon {
+        color: $color-gray;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-of-type(even) {
+        background-color: $color-lighter-gray;
+      }
+
+      &:hover {
+        background-color: $color-light-gray;
+      }
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid white;
+
+    th {
+      font-weight: bold;
+
+      &:not(:last-child) {
+        border-right: 1px solid $border-color;
+      }
+
+      &.sortable-column {
+        cursor: pointer;
+      }
+
+      span {
+        &.zamicon {
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  td {
+    border-left: 1px solid $border-color;
+    vertical-align: middle;
+    font-weight: normal;
+
+    .zamicon {
+      margin-right: 6px;
+    }
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  td img {
+    width: 70px;
+  }
+
+  td.img-td {
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-td {
+    width: 70px;
+  }
+
+  td, th {
+    border-top: none;
+    padding: 13px;
+  }
+
+  td {
+    line-height: 1;
+  }
+
+  th {
+    span {
+      line-height: 0;
+    }
+  }
+
+  .table-img {
+    display: inherit;
+    height: auto;
+    margin: 0 auto;
+    max-width: 24px;
+    width: auto;
+  }
+
+  .table-status-icon {
+    position: relative;
+    top: -1px;
+  }
+
+  [class^="zamicon-"]:before,
+  [class*=" zamicon-"]:before {
+    color: inherit;
+  }
+
+  [class^="zamicon-caret-sort"]:before,
+  [class*=" zamicon-caret-sort"]:before {
+    font-size: 10px;
+  }
+}
+
+.table-fixed {
+  table-layout: fixed;
+}

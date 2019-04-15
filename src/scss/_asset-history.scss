@@ -1,0 +1,248 @@
+// Asset history calendar
+.asset-detail-icon {
+  .zamicon-state-in-use {
+    &:before {
+      color: $asset-in-use;
+    }
+  }
+
+  .zamicon-state-available {
+    &:before {
+      color: $asset-available;
+    }
+  }
+
+  .zamicon-state-idle {
+    &:before {
+      color: $asset-idle;
+    }
+  }
+
+  .zamicon-state-repair {
+    &:before {
+      color: $asset-in-repair;
+    }
+  }
+
+  .zamicon-state-transport {
+    &:before {
+      color: $asset-transport;
+    }
+  }
+
+  .zamicon-scan-off {
+    &:before {
+      color: $asset-without-tracker;
+    }
+
+    & + .asset-status {
+      color: $asset-without-tracker;
+      font-weight: 700;
+    }
+  }
+}
+
+.calendar {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .calendar-row {
+    display: flex;
+    flex-direction: row;
+
+    .col {
+      padding-left: 0;
+      padding-right: 0;
+
+      &:first-child {
+        min-width: 167px;
+      }
+    }
+  }
+
+  .calendar-row-week {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .loading {
+    top: 40%;
+    left: 0;
+    height: 100px;
+    width: 50px;
+    position: relative;
+    margin: auto;
+  }
+}
+
+.calendar-col-days {
+  height: 67px;
+}
+
+.calendar-col-weeks {
+  height: 24px;
+}
+
+.calendar-cell {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .3px;
+  color: $color-dark-gray;
+  width: 30px;
+  height: 100%;
+  text-align: center;
+  border-bottom: 1px solid $color-gray;
+  flex-grow: 1;
+
+  &:hover {
+    cursor: default;
+  }
+
+  &.is-sunday {
+    border-right: 1px solid $color-gray;
+  }
+
+    &-state {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      height: 30px;
+      line-height: 30px;
+
+    &.is-first {
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+    }
+
+    &.is-last {
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+
+    &.zamicon {
+      &:before {
+        color: $color-white;
+      }
+    }
+  }
+
+  &-label {
+    color: $color-dark-gray;
+
+    &.is-inverted {
+      color: $color-white;
+    }
+  }
+
+  .state-in-use {
+    background-color: $asset-in-use;
+  }
+
+  .state-idle {
+    background-color: $asset-idle;
+  }
+
+  .state-available {
+    background-color: $asset-available;
+  }
+
+  .state-repair {
+    background-color: $asset-in-repair;
+  }
+
+  .state-transport {
+    background-color: $asset-transport;
+  }
+}
+
+.calendar-cell-site {
+  border-bottom: 1px solid $color-gray;
+  height: 100%;
+  padding-top: 14px;
+  font-size: 12px;
+  color: $color-dark;
+  letter-spacing: .3px;
+  line-height: 1.33;
+
+  .site-icon {
+    margin-right: 5px;
+    float: left;
+  }
+
+  .site-type {
+    @extend %truncate;
+    min-width: 0;
+    letter-spacing: .2px;
+    color: $color-dark-gray;
+  }
+
+  .site-name {
+    @extend %truncate;
+    min-width: 0;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: normal;
+  }
+}
+
+.calendar-cell-state {
+    margin-top: 19px;
+}
+
+.calendar-col-weeks {
+  height: 24px;
+
+  .calendar-cell {
+    &.week-number {
+      .calendar-cell-state {
+        top: inherit;
+      }
+    }
+  }
+
+  &.bottom {
+    .calendar-cell {
+      border-bottom: none;
+
+      &.week-number {
+        bottom: 8px;
+      }
+    }
+  }
+}
+
+.row-weekday-names {
+  .calendar-cell-site {
+    padding-top: 12px;
+  }
+
+  .calendar-col-days {
+    height: 40px;
+  }
+
+  .calendar-cell-state {
+    margin-top: 12px;
+    height: 16px;
+    line-height: 16px;
+  }
+}
+
+.is-hovered{
+  background-color: $color-lighter-gray;
+}
+
+.today {
+  background-color: $color-light-gray;
+}

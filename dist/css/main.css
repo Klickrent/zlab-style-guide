@@ -42,210 +42,213 @@
   src: local("Teko Medium"), local("Teko-Medium"), url(../fonts/teko-v7-latin-500.eot?#iefix) format("embedded-opentype"), url(../fonts/teko-v7-latin-500.woff2) format("woff2"), url(../fonts/teko-v7-latin-500.woff) format("woff"), url(../fonts/teko-v7-latin-500.ttf) format("truetype"), url(../fonts/teko-v7-latin-500.svg#Teko) format("svg"); }
 
 @font-face {
-  font-family: 'Zamicons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Zamicons.eot?pu6bh4);
-  src: url(../fonts/Zamicons.eot?pu6bh4#iefix) format("embedded-opentype"), url(../fonts/Zamicons.woff?pu6bh4) format("woff"), url(../fonts/Zamicons.ttf?pu6bh4) format("truetype"), url(../fonts/Zamicons.svg?pu6bh4#Zamicons) format("svg"); }
+  font-family: 'zamicon';
+  src: url("../fonts/zamicon-v1.3.0.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/zamicon-v1.3.0.eot?iefix") format("embedded-opentype"), url("../fonts/zamicon-v1.3.0.woff2") format("woff2"), url("../fonts/zamicon-v1.3.0.woff") format("woff"), url("../fonts/zamicon-v1.3.0.ttf") format("truetype"), url("../fonts/zamicon-v1.3.0.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal; }
 
-[class^='zamicon-'], [class*=' zamicon-'] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: Zamicons !important;
+.zamicon {
+  font-family: 'zamicon' !important;
+  /* Use !important to prevent issues with browser extensions that change fonts */
   speak: none;
-  font-size: 24px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  text-rendering: optimizeSpeed;
+  /* Kerning and ligatures aren't needed */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  [class^='zamicon-']:before, [class*=' zamicon-']:before {
-    color: #555F60; }
 
-.zamicon-help:before {
-  content: "\e900"; }
-
-.zamicon-info:before {
-  content: "\e901"; }
-
-.zamicon-mail:before {
-  content: "\e902"; }
-
-.zamicon-phone:before {
-  content: "\e903"; }
+.zamicon:before {
+  color: #555F60; }
 
 .zamicon-arrow-drop-down:before {
-  content: "\e904"; }
+  content: '\F000'; }
 
 .zamicon-arrow-drop-up:before {
-  content: "\e905"; }
+  content: '\F001'; }
 
 .zamicon-arrow-left:before {
-  content: "\e906"; }
+  content: '\F002'; }
 
 .zamicon-arrow-right:before {
-  content: "\e907"; }
+  content: '\F003'; }
 
 .zamicon-back:before {
-  content: "\e908"; }
+  content: '\F004'; }
 
 .zamicon-calendar:before {
-  content: "\e909"; }
+  content: '\F005'; }
 
 .zamicon-camera-success:before {
-  content: "\e90a"; }
+  content: '\F006'; }
 
 .zamicon-camera-switch:before {
-  content: "\e90b"; }
+  content: '\F007'; }
 
 .zamicon-camera:before {
-  content: "\e90c"; }
+  content: '\F008'; }
 
 .zamicon-cancel-in-circle:before {
-  content: "\e90d"; }
+  content: '\F009'; }
 
 .zamicon-cancel:before {
-  content: "\e90e"; }
+  content: '\F00A'; }
 
 .zamicon-caret-sort-asc:before {
-  content: "\e90f"; }
+  content: '\F00B'; }
 
 .zamicon-caret-sort-desc:before {
-  content: "\e910"; }
+  content: '\F00C'; }
 
 .zamicon-caret-sort:before {
-  content: "\e911"; }
+  content: '\F00D'; }
 
 .zamicon-delete:before {
-  content: "\e912"; }
+  content: '\F00E'; }
 
 .zamicon-download:before {
-  content: "\e913"; }
+  content: '\F00F'; }
 
 .zamicon-edit:before {
-  content: "\e914"; }
+  content: '\F010'; }
 
 .zamicon-error:before {
-  content: "\e915"; }
+  content: '\F011'; }
 
 .zamicon-favorite-selected:before {
-  content: "\e916"; }
+  content: '\F012'; }
 
 .zamicon-favorite-unselected:before {
-  content: "\e917"; }
+  content: '\F013'; }
 
 .zamicon-filter:before {
-  content: "\e918"; }
+  content: '\F014'; }
 
 .zamicon-flash:before {
-  content: "\e919"; }
+  content: '\F015'; }
 
 .zamicon-forum:before {
-  content: "\e91a"; }
+  content: '\F016'; }
 
 .zamicon-gallery:before {
-  content: "\e91b"; }
+  content: '\F017'; }
 
 .zamicon-gift:before {
-  content: "\e91c"; }
+  content: '\F018'; }
 
 .zamicon-hamburger:before {
-  content: "\e91d"; }
+  content: '\F019'; }
 
 .zamicon-heart:before {
-  content: "\e91e"; }
+  content: '\F01A'; }
+
+.zamicon-help:before {
+  content: '\F01B'; }
 
 .zamicon-import:before {
-  content: "\e91f"; }
+  content: '\F01C'; }
+
+.zamicon-info:before {
+  content: '\F01D'; }
 
 .zamicon-list-2:before {
-  content: "\e920"; }
+  content: '\F01E'; }
 
 .zamicon-list:before {
-  content: "\e921"; }
+  content: '\F01F'; }
 
 .zamicon-location-off:before {
-  content: "\e922"; }
+  content: '\F020'; }
 
 .zamicon-location:before {
-  content: "\e923"; }
+  content: '\F021'; }
 
 .zamicon-logout:before {
-  content: "\e924"; }
+  content: '\F022'; }
+
+.zamicon-mail:before {
+  content: '\F023'; }
 
 .zamicon-mic:before {
-  content: "\e925"; }
+  content: '\F024'; }
 
 .zamicon-overview:before {
-  content: "\e926"; }
+  content: '\F025'; }
 
 .zamicon-password-hide:before {
-  content: "\e927"; }
+  content: '\F026'; }
 
 .zamicon-password-show:before {
-  content: "\e928"; }
+  content: '\F027'; }
+
+.zamicon-phone:before {
+  content: '\F028'; }
 
 .zamicon-plus:before {
-  content: "\e929"; }
+  content: '\F029'; }
 
 .zamicon-scan-off:before {
-  content: "\e92a"; }
+  content: '\F02A'; }
 
 .zamicon-scan:before {
-  content: "\e92b"; }
+  content: '\F02B'; }
 
 .zamicon-search:before {
-  content: "\e92c"; }
+  content: '\F02C'; }
 
 .zamicon-settings:before {
-  content: "\e92d"; }
+  content: '\F02D'; }
 
 .zamicon-shopping-cart:before {
-  content: "\e92e"; }
+  content: '\F02E'; }
 
 .zamicon-state-available:before {
-  content: "\e92f"; }
+  content: '\F02F'; }
 
 .zamicon-state-idle:before {
-  content: "\e930"; }
+  content: '\F030'; }
 
 .zamicon-state-in-use:before {
-  content: "\e931"; }
+  content: '\F031'; }
 
 .zamicon-state-repair:before {
-  content: "\e932"; }
+  content: '\F032'; }
 
 .zamicon-state-transport-incoming:before {
-  content: "\e933"; }
+  content: '\F033'; }
 
 .zamicon-state-transport-outgoing:before {
-  content: "\e934"; }
+  content: '\F034'; }
 
 .zamicon-state-transport:before {
-  content: "\e935"; }
+  content: '\F035'; }
 
 .zamicon-success:before {
-  content: "\e936"; }
+  content: '\F036'; }
 
 .zamicon-table:before {
-  content: "\e937"; }
+  content: '\F037'; }
 
 .zamicon-three-dots:before {
-  content: "\e938"; }
+  content: '\F038'; }
 
 .zamicon-upload:before {
-  content: "\e939"; }
+  content: '\F039'; }
 
 .zamicon-user-off:before {
-  content: "\e93a"; }
+  content: '\F03A'; }
 
 .zamicon-user:before {
-  content: "\e93b"; }
+  content: '\F03B'; }
 
 .zamicon-wifi-error:before {
-  content: "\e93c"; }
+  content: '\F03C'; }
 
 .text-truncate, .ellipsify, .ellipsify .asset-status, .navbar-header__title .subline, .sidenav .sidenav__footer .user-company, .asset-list-item--name, .asset-list-item--state-description, .calendar-cell-site .site-type, .calendar-cell-site .site-name {
   white-space: nowrap;

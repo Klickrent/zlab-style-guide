@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'zamicon';
+  src: url('../fonts/zamicon-v1.3.0.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/zamicon-v1.3.0.eot?iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/zamicon-v1.3.0.woff2') format('woff2'), /* Edge 14+, Chrome 36+, Firefox 39+, some mobile */
+    url('../fonts/zamicon-v1.3.0.woff') format('woff'),  /* IE 9+, Edge, Firefox 3.6+, Chrome 5+, Safari 5.1+ */
+    url('../fonts/zamicon-v1.3.0.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/zamicon-v1.3.0.svg') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+.zamicon {
+  font-family: 'zamicon' !important; /* Use !important to prevent issues with browser extensions that change fonts */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: optimizeSpeed; /* Kerning and ligatures aren't needed */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.zamicon:before {
+  color: #555F60;
+}
+.zamicon-arrow-drop-down:before {
+  content: '\F000'
+}
+.zamicon-arrow-drop-up:before {
+  content: '\F001'
+}
+.zamicon-arrow-left:before {
+  content: '\F002'
+}
+.zamicon-arrow-right:before {
+  content: '\F003'
+}
+.zamicon-back:before {
+  content: '\F004'
+}
+.zamicon-calendar:before {
+  content: '\F005'
+}
+.zamicon-camera-success:before {
+  content: '\F006'
+}
+.zamicon-camera-switch:before {
+  content: '\F007'
+}
+.zamicon-camera:before {
+  content: '\F008'
+}
+.zamicon-cancel-in-circle:before {
+  content: '\F009'
+}
+.zamicon-cancel:before {
+  content: '\F00A'
+}
+.zamicon-caret-sort-asc:before {
+  content: '\F00B'
+}
+.zamicon-caret-sort-desc:before {
+  content: '\F00C'
+}
+.zamicon-caret-sort:before {
+  content: '\F00D'
+}
+.zamicon-delete:before {
+  content: '\F00E'
+}
+.zamicon-download:before {
+  content: '\F00F'
+}
+.zamicon-edit:before {
+  content: '\F010'
+}
+.zamicon-error:before {
+  content: '\F011'
+}
+.zamicon-favorite-selected:before {
+  content: '\F012'
+}
+.zamicon-favorite-unselected:before {
+  content: '\F013'
+}
+.zamicon-filter:before {
+  content: '\F014'
+}
+.zamicon-flash:before {
+  content: '\F015'
+}
+.zamicon-forum:before {
+  content: '\F016'
+}
+.zamicon-gallery:before {
+  content: '\F017'
+}
+.zamicon-gift:before {
+  content: '\F018'
+}
+.zamicon-hamburger:before {
+  content: '\F019'
+}
+.zamicon-heart:before {
+  content: '\F01A'
+}
+.zamicon-help:before {
+  content: '\F01B'
+}
+.zamicon-import:before {
+  content: '\F01C'
+}
+.zamicon-info:before {
+  content: '\F01D'
+}
+.zamicon-list-2:before {
+  content: '\F01E'
+}
+.zamicon-list:before {
+  content: '\F01F'
+}
+.zamicon-location-off:before {
+  content: '\F020'
+}
+.zamicon-location:before {
+  content: '\F021'
+}
+.zamicon-logout:before {
+  content: '\F022'
+}
+.zamicon-mail:before {
+  content: '\F023'
+}
+.zamicon-mic:before {
+  content: '\F024'
+}
+.zamicon-overview:before {
+  content: '\F025'
+}
+.zamicon-password-hide:before {
+  content: '\F026'
+}
+.zamicon-password-show:before {
+  content: '\F027'
+}
+.zamicon-phone:before {
+  content: '\F028'
+}
+.zamicon-plus:before {
+  content: '\F029'
+}
+.zamicon-scan-off:before {
+  content: '\F02A'
+}
+.zamicon-scan:before {
+  content: '\F02B'
+}
+.zamicon-search:before {
+  content: '\F02C'
+}
+.zamicon-settings:before {
+  content: '\F02D'
+}
+.zamicon-shopping-cart:before {
+  content: '\F02E'
+}
+.zamicon-state-available:before {
+  content: '\F02F'
+}
+.zamicon-state-idle:before {
+  content: '\F030'
+}
+.zamicon-state-in-use:before {
+  content: '\F031'
+}
+.zamicon-state-repair:before {
+  content: '\F032'
+}
+.zamicon-state-transport-incoming:before {
+  content: '\F033'
+}
+.zamicon-state-transport-outgoing:before {
+  content: '\F034'
+}
+.zamicon-state-transport:before {
+  content: '\F035'
+}
+.zamicon-success:before {
+  content: '\F036'
+}
+.zamicon-table:before {
+  content: '\F037'
+}
+.zamicon-three-dots:before {
+  content: '\F038'
+}
+.zamicon-upload:before {
+  content: '\F039'
+}
+.zamicon-user-off:before {
+  content: '\F03A'
+}
+.zamicon-user:before {
+  content: '\F03B'
+}
+.zamicon-wifi-error:before {
+  content: '\F03C'
+}

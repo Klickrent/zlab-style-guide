@@ -17,7 +17,6 @@ const {readDirDeep} = require('./src/utils/util');
 const {ArgumentParser} = require('argparse');
 const version = require('./package.json').version;
 
-
 const parser = new ArgumentParser({
     version: version,
     addHelp: true,

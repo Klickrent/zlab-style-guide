@@ -43,9 +43,9 @@
 
 @font-face {
   font-family: 'zamicon';
-  src: url("../fonts/zamicon-v1.2.0.eot");
+  src: url("../fonts/zamicon-v1.2.1.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/zamicon-v1.2.0.eot?iefix") format("embedded-opentype"), url("../fonts/zamicon-v1.2.0.woff2") format("woff2"), url("../fonts/zamicon-v1.2.0.woff") format("woff"), url("../fonts/zamicon-v1.2.0.ttf") format("truetype"), url("../fonts/zamicon-v1.2.0.svg") format("svg");
+  src: url("../fonts/zamicon-v1.2.1.eot?iefix") format("embedded-opentype"), url("../fonts/zamicon-v1.2.1.woff2") format("woff2"), url("../fonts/zamicon-v1.2.1.woff") format("woff"), url("../fonts/zamicon-v1.2.1.ttf") format("truetype"), url("../fonts/zamicon-v1.2.1.svg") format("svg");
   /* Legacy iOS */
   font-weight: normal;
   font-style: normal; }

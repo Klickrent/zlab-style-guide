@@ -8,19 +8,29 @@ build() {
     docker-compose run --name $docker_build --rm $docker_build sh -c "npm run build"
 }
 
+copy_font_folder() {
+    docker-compose run --name $docker_build --rm $docker_build sh -c "npm run copy-font-folder"
+}
+
+generate_icon_font() {
+    docker-compose run --name $docker_build --rm $docker_build sh -c "npm run generate-icon-font"
+}
+
+init() {
+    docker-compose run --name $docker_build --rm $docker_build sh -c "npm run init"
+}
+
 watch() {
     docker-compose run --name $docker_build --rm $docker_build sh -c "npm run watch"
 }
 
-generate_icon_font() {
-    docker-compose run --rm $docker_build sh -c "node svg2Font.js"
-}
-
 show_commands() {
     echo "Supported commands:"
+    echo "${bold}init{normal} to install all package dependencies"
     echo "${bold}build${normal} to (re)build the styleguide HTML page"
     echo "${bold}watch${normal} watch the project for file changes and trigger a build"
     echo "${bold}generate:font${normal} generate zamicon font from svg images and store it an extra folder for now"
+    echo "${bold}copy:font-folder${normal} to copy the font folder from source to distributable"
     echo "${bold}cli${normal} Runs the given command in the frontend build container"
 }
 
@@ -35,8 +45,16 @@ case $1 in
         build
     ;;
 
+    init)
+        init
+    ;;
+
     watch)
         watch
+    ;;
+
+    copy:font-folder)
+        copy_font_folder
     ;;
 
     generate:font)

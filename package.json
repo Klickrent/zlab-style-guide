@@ -1,6 +1,6 @@
 {
     "name": "zlab-style-guide",
-    "version": "1.3.0",
+    "version": "1.2.1",
     "description": "Zeppelin Lab GmbH Style Guide",
     "private": true,
     "main": "dist",
@@ -9,9 +9,11 @@
         "url": "https://github.com/Klickrent/zlab-style-guide.git"
     },
     "scripts": {
-        "build": "npm install && npm run generate-font && node-sass --include-path scss /app/src/scss/main.scss /dist/css/main.css",
+        "init": "npm install",
+        "build": "npm run generate-icon-font && node-sass --include-path scss /app/src/scss/main.scss /dist/css/main.css && npm run copy-font-folder",
         "watch": "nodemon -e scss -x \"npm run build\"",
-        "generate-font": "node svg2font.js src/images/zamicons -of src/fonts -os src/scss -n zamicon -p zamicon- -b zamicon"
+        "generate-icon-font": "rm src/fonts/zamicon-v*.* && node svg2font.js src/images/zamicons -of src/fonts -os src/scss -n zamicon -p zamicon- -b zamicon",
+        "copy-font-folder": "rm -rf dist/fonts/; cp -R src/fonts/ dist/"
     },
     "devDependencies": {
         "argparse": "^1",

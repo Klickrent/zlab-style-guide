@@ -19,16 +19,6 @@
   background-position: $position;
 }
 
-%truncate {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-%clickable {
-  cursor: pointer;
-}
-
 body {
   @include fontRoboto();
   @include fontSmoothing();

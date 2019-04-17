@@ -285,3 +285,19 @@ ul {
   height: 1px;
   background-color: $color-gray;
 }
+
+.email-verified {
+  @include fontRoboto(10px, 400);
+  color: $color-success;
+}
+.email-unverified {
+  @include fontRoboto(13px, 400);
+  color: $color-medium-gray !important;
+  padding-top: 5px;
+
+  a {
+    color: $color-primary;
+    text-decoration: underline;
+    padding-left: 20px;
+  }
+}

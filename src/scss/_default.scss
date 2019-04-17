@@ -29,73 +29,6 @@
   cursor: pointer;
 }
 
-$color-primary: #00AEEF;
-$color-primary-dark: #0D87E9;
-$color-primary-light: #D3EAFE;
-$color-secondary: #FAA61A;
-$color-secondary-dark: #DE7F1E;
-$color-secondary-light: #FFF6E6;
-$color-danger: #AF0E0E;
-$color-warning: $color-secondary;
-$color-success: #22AC47;
-$color-dark: #131516;
-$color-dark-gray: #555F60;
-$color-medium-gray: #8C979A;
-$color-light-gray: #DADEDF;
-$color-lighter-gray: #F2F3F4;
-$color-super-light-gray: #FCFCFC;
-$color-gray: #C1C7C9;
-$color-white: #FFFFFF;
-
-$image-spinner: url(/static/images/spinner.svg);
-$image-add-photo-asset: url(~images/icons/add-photo-asset.svg);
-$image-add-button: url(/static/images/icons/buttons/add-button.png);
-$image-add-button-blue: url(/static/images/icons/buttons/add-button-blue.png);
-$image-upload-button: url(/static/images/icons/buttons/upload-button.svg);
-$image-user-default: url(/static/images/user-image-default.svg);
-$image-table-column-sortable: url(/static/images/icons/table/sortableColumn.png);
-$image-table-column-sort-up: url(/static/images/icons/table/sortColumnUp.png);
-$image-table-column-sort-down: url(/static/images/icons/table/sortColumnDown.png);
-$image-username-not-verified: url(/static/images/icons/notVerified.png);
-$image-map-default-background: url(/static/images/icons/map-default-bg.svg);
-$image-site-type-yard: url(/static/images/icons/cone.svg);
-$image-site-type-depot: url(/static/images/icons/warehouse.svg);
-$image-icon-site-users: url(/static/images/icons/site-users.svg);
-$image-icon-site-assets: url(/static/images/icons/site-assets.svg);
-$image-icon-site-address: url(/static/images/icons/site-address.svg);
-$image-icon-delete: url(/static/images/icons/delete.svg);
-$image-icon-delete-deactivated: url(/static/images/icons/delete_deactivated.svg);
-$image-icon-check: url(/static/images/icons/check.svg);
-$image-icon-warning: url(/static/images/icons/warning.svg);
-$image-icon-verified: url(/static/images/icons/verified.svg);
-$image-icon-locations-active: url(/static/images/icons/locations-active.svg);
-$image-icon-cancel-mobile: url(/static/images/icons/cancel-mobile.png);
-$image-asset-default: url(/static/images/asset-image-default.svg);
-$image-asset-scan: url(~images/asset-scan.svg);
-$image-chevron-left-white: url(/static/images/icons/chevron-left-white.svg);
-
-
-$maps-marker-width: 23px;
-$maps-marker-height: 30px;
-$maps-marker-width-xl: $maps-marker-width*2;
-$maps-marker-height-xl: $maps-marker-height*2;
-$static-map-width: 300px;
-$static-map-height: 125px;
-
-$info-card-width: 300px;
-$info-card-map-height: 125px;
-
-$form-map-width: 435px;
-$form-map-height: 215px;
-
-$navigation-width: 273px;
-$containerSpacingLeft: 43px;
-$containerSpacingRight: 0;
-
-// asset state color mapping
-$sidenav-left-spacing: 23px;
-$sidenav-footer-height: 210px;
-
 body {
   @include fontRoboto();
   @include fontSmoothing();
@@ -300,52 +233,6 @@ ul {
   transition: opacity .3s linear;
 }
 
-.loading {
-    background: rgba(255, 255, 255, .5) $image-spinner center center no-repeat;
-    background-size: 50px;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 2000;
-    display: table;
-
-    &-text {
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
-        padding-top: 120px;
-
-        & > span {
-            background: white;
-            padding: 8px;
-            border-radius: 1px;
-        }
-    }
-}
-
-.with-menu .loading {
-    left: $navigation-width;
-    width: calc(100vw - #{$navigation-width});
-}
-
-.acquire-image {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    margin: 0 4px 4px 0;
-    background: transparent $image-add-photo-asset no-repeat 0 0;
-    background-size: 100px;
-    position: relative;
-    border-radius: 2px;
-
-    .loading {
-        position: absolute;
-    }
-}
-
 .back-link {
     padding-top: 47px;
 
@@ -365,57 +252,6 @@ ul {
     }
 }
 
-.email-verified {
-    @include fontRoboto(10px, 400);
-    color: $color-success;
-}
-.email-verified:before {
-    position: relative;
-    top: 4px;
-    content: $image-icon-verified;
-    padding-left: 12px;
-    padding-right: 6px;
-}
-.email-unverified {
-    @include fontRoboto(13px, 400);
-    color: $color-medium-gray !important;
-    padding-top: 5px;
-
-    a {
-        color: $color-primary;
-        text-decoration: underline;
-        padding-left: 20px;
-    }
-}
-.email-unverified:before {
-    content: $image-username-not-verified;
-    padding-right: 6px;
-}
-
-
-a.cta {
-    text-decoration: none;
-    &.delete-link {
-        line-height: 52px;
-        padding-left: 16px;
-        background: transparent $image-icon-delete 0 center no-repeat;
-        background-size: 12px;
-    }
-}
-
-.cta-disabled {
-    color: $color-medium-gray;
-    text-decoration: none;
-
-    &.delete-link {
-        cursor: not-allowed;
-        line-height: 52px;
-        padding-left: 16px;
-        background: transparent $image-icon-delete-deactivated 0 center no-repeat;
-        background-size: 12px;
-        display: inline-block;
-    }
-}
 .selection-disabled {
     cursor: not-allowed;
 }
@@ -443,20 +279,6 @@ a.cta {
 .ellipsify, .ellipsify .asset-status {
     @extend %truncate;
     min-width: 0;
-}
-
-.horizontal-line {
-    margin-top: 21px;
-    margin-bottom: 30px;
-    margin-left: -$containerSpacingLeft;
-    width: calc(100vw - #{$navigation-width});
-    height: 1px;
-    background-color: $color-lighter-gray;
-
-    &.hr-header-edit {
-        margin-top: 0;
-        margin-bottom: 43px;
-    }
 }
 
 .divider-horizontal {

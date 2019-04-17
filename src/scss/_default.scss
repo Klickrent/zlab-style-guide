@@ -46,8 +46,6 @@ $color-lighter-gray: #F2F3F4;
 $color-super-light-gray: #FCFCFC;
 $color-gray: #C1C7C9;
 $color-white: #FFFFFF;
-$color-asset-in-transport: #A524CB;
-$color-asset-in-use:  #2CAB4C;
 
 $image-spinner: url(/static/images/spinner.svg);
 $image-add-photo-asset: url(~images/icons/add-photo-asset.svg);
@@ -97,13 +95,6 @@ $containerSpacingRight: 0;
 // asset state color mapping
 $sidenav-left-spacing: 23px;
 $sidenav-footer-height: 210px;
-
-$asset-in-use: $color-asset-in-use;
-$asset-available: $color-primary;
-$asset-idle: $color-secondary;
-$asset-in-repair: $color-medium-gray;
-$asset-transport: $color-asset-in-transport;
-$asset-without-tracker: $color-danger;
 
 body {
   @include fontRoboto();

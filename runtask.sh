@@ -26,7 +26,7 @@ watch() {
 
 show_commands() {
     echo "Supported commands:"
-    echo "${bold}init{normal} to install all package dependencies"
+    echo "${bold}init${normal} to install all package dependencies"
     echo "${bold}build${normal} to (re)build the styleguide HTML page"
     echo "${bold}watch${normal} watch the project for file changes and trigger a build"
     echo "${bold}generate:font${normal} generate zamicon font from svg images and store it an extra folder for now"

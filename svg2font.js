@@ -172,6 +172,7 @@ ${cssBase ? `.${cssId(cssBase)}` : `[class^="${cssId(cssPrefix)}"], [class*=" ${
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
+  font-size: 24px;
   text-transform: none;
   line-height: 1;
   text-rendering: optimizeSpeed; /* Kerning and ligatures aren't needed */

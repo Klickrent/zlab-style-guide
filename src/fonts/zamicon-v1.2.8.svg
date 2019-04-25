@@ -9,7 +9,7 @@
     <missing-glyph horiz-adv-x="0" />
     <glyph glyph-name="arrow-drop-down"
       unicode="&#xF000;"
-      horiz-adv-x="5000" d="M0 5000H5000V0H0zM1458.3333333333335 3125L2500 2083.333333333333L3541.666666666667 3125z" />
+      horiz-adv-x="5000" d="M1458.3333333333333 3125L2500 2083.333333333333L3541.666666666667 3125z" />
     <glyph glyph-name="arrow-drop-up"
       unicode="&#xF001;"
       horiz-adv-x="5000" d="M1458.3333333333333 2083.333333333333L2500 3125L3541.666666666667 2083.333333333333z" />

@@ -84,13 +84,6 @@
         .bmd-layout-content {
             min-height: 400px;
         }
-        .pre-scrollable {
-            max-height: 500px;
-        }
-        body {
-            height: 100%;
-            overflow: hidden;
-        }
         @media only screen and (max-width: 767px) {
             .order-1 {
                 padding-bottom: 10px;
@@ -232,7 +225,7 @@
         <div class="row">
 
             <!-- Main section -->
-            <div class="col-12 col-md-10 pre-scrollable">
+            <div class="col-12 col-md-10">
                 <div class="h1">
                     Style Guide
                 </div>
@@ -2642,7 +2635,7 @@
             </div><!-- End main section -->
 
             <!-- Sidebar menu -->
-            <div class="d-none d-md-block col-md-2 pre-scrollable">
+            <div class="d-none d-md-block col-md-2">
                 <ul class="list-unstyled">
                     <li>
                         <a href="#colors">Colors</a>
@@ -2703,6 +2696,14 @@
                 </ul>
             </div><!-- End sidebar menu -->
         </div><!-- End CSS view -->
+        <div class="mt-5">
+            Some icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor
+            Cresnar</a> and <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                target="_blank">CC
+            3.0 BY</a>
+        </div>
     </div>
 </div>
 
@@ -2761,17 +2762,6 @@
                 let overlayEl = $('.vp-overlay');
                 overlayEl.show();
                 setTimeout(function() { overlayEl.hide(); }, 3000);
-            });
-
-            function resizeScrollableSection() {
-                var el = $('.pre-scrollable');
-                el.css('max-height', window.innerHeight - el.offset().top - 48);
-            }
-
-            resizeScrollableSection();
-
-            window.addEventListener('resize', function(event){
-                resizeScrollableSection();
             });
 
             const $main = $('#main');

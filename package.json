@@ -1,6 +1,6 @@
 {
     "name": "zlab-style-guide",
-    "version": "1.2.9",
+    "version": "1.3.0",
     "description": "Zeppelin Lab GmbH Style Guide",
     "private": true,
     "main": "dist",
@@ -10,11 +10,12 @@
     },
     "scripts": {
         "init": "npm install",
-        "build": "npm run generate-icon-font && npm run webpack && npm run copy-font-folder",
+        "build": "npm run generate-icon-font && npm run webpack && npm run copy-font-folder && npm run copy-style-folder",
         "webpack": "webpack",
         "watch": "nodemon -e scss -x \"npm run build\"",
         "generate-icon-font": "rm src/fonts/zamicon-v*.* && node svg2font.js src/images/zamicons -of src/fonts -os src/scss -n zamicon -p zamicon- -b zamicon",
-        "copy-font-folder": "rm -rf dist/fonts/; cp -R src/fonts/ dist/"
+        "copy-font-folder": "rm -rf dist/fonts/; cp -R src/fonts/ dist/",
+        "copy-style-folder": "rm -f docs/css/main.css; cp dist/css/main.css docs/css"
     },
     "devDependencies": {
         "argparse": "^1",

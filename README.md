@@ -8,4 +8,4 @@ Install it via npm:
 npm install github:Klickrent/zlab-style-guide
 ```
 
-Some of the included icons are made by [Gregor Cresnar](https://www.flaticon.com/authors/gregor-cresnar) (distributed via [www.flaticon.com](https://www.flaticon.com)) and some are made by [Freepik](https://www.freepik.com). All are available under the [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/) license.
+Some of the included icons are made by [Gregor Cresnar](https://www.flaticon.com/authors/gregor-cresnar) and [Freepik](https://www.freepik.com) - distributed via [www.flaticon.com](https://www.flaticon.com)). All are available under the [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/) license.

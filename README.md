@@ -8,7 +8,4 @@ Install it via npm:
 npm install github:Klickrent/zlab-style-guide
 ```
 
-Please be aware, that this is a private repo and as such you'll need to have proper access to it. Ideally you 
-should provide your public SSH key for access control.
-If you are using Docker for dev / deployment you should simply mount your ~/.ssh/ folder into the relevant 
-container as a read-only volume.
+Some of the included icons are made by [Gregor Cresnar](https://www.flaticon.com/authors/gregor-cresnar) and [Freepik](https://www.freepik.com) - distributed via [www.flaticon.com](https://www.flaticon.com)). All are available under the [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/) license.

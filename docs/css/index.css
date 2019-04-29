@@ -1,3 +1,7 @@
+#main {
+    padding-left: 60px;
+    padding-right: 60px;
+}
 .sidenav {
     width: 0;
 }
@@ -104,6 +108,7 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     padding: 16px;
     font-size: 20px;
     background: white;
@@ -115,6 +120,7 @@ html, body {
 
 aside {
     position: fixed;
+    z-index: 2;
     top: 0;
     transition: -webkit-transform 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
     transition: transform 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
@@ -150,6 +156,11 @@ nav a, nav label {
     cursor: pointer;
     font-weight: 500;
     transition: none;
+    margin-bottom: 0;
+}
+nav a.active {
+    color: #00AEEF;
+    font-weight: 800;
 }
 nav a:hover, nav label:hover {
     background: #ebebeb;
@@ -228,11 +239,13 @@ main {
     aside {
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
+        padding-top: 52px;
     }
 
     main {
         width: 100%;
         margin-left: 0;
+        padding-top: 52px;
     }
 
     #responsive-nav + label {
@@ -240,7 +253,7 @@ main {
     }
     #responsive-nav:checked + label {
         color: white;
-        background: #16a085;
+        background: #00AEEF;
     }
     #responsive-nav:checked ~ aside {
         -webkit-transform: translateX(0);
@@ -250,6 +263,16 @@ main {
 @media screen and (max-width: 700px) {
     aside {
         width: 100%;
+        padding-top: 68px;
+    }
+
+    main {
+        padding-top: 68px;
+    }
+
+    #main {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     #responsive-nav + label {

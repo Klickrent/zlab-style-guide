@@ -137,7 +137,7 @@
             <img height="60" src="img/logo.png">
         </a>
     </div>
-    <nav>
+    <nav id="leftNav">
         <a href="#gettingStarted">Getting started</a>
         <div class="nav-collapsible">
             <input type="checkbox" id="nav-collapsible-basics">
@@ -185,45 +185,26 @@
                 <a href="#mobileList">List</a>
             </div>
         </div>
+        <div class="nav-collapsible">
+            <input type="checkbox" id="nav-collapsible-components">
+            <label for="nav-collapsible-components">Components</label>
+            <div class="wrap">
+                <a href="#dialogs">Dialogs</a>
+                <a href="#labels">Labels and Values</a>
+                <a href="#lists">Lists</a>
+                <a href="#screenOverlay">Screen overlay</a>
+                <a href="#snackbars">Snackbars</a>
+                <a href="#tables">Tables</a>
+                <a href="#tooltips">Tooltips</a>
+            </div>
+        </div>
         <a href="#icons">Icons</a>
-
-        <!-- Sidebar menu
-        <div class="d-none d-md-block col-md-2">
-            <ul class="list-unstyled">
-                <li>
-                    <a href="#lists">Lists</a>
-                </li>
-                <li>
-                    <a href="#tables">Tables</a>
-                </li>
-                <li>
-                    <a href="#labels">Labels and Values</a>
-                </li>
-                <li>
-                    <a href="#dialogs">Dialogs</a>
-                </li>
-                <li>
-                    <a href="#snackbars">Snackbars</a>
-                </li>
-                <li>
-                    <a href="#tooltips">Tooltips</a>
-                </li>
-                <li>
-                    <a href="#mobile">Mobile</a>
-                    <ul>
-                        <li>
-                            <a href="#screenOverlay">Screen overlay</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div> End sidebar menu -->
     </nav>
 </aside>
 <main>
     <h1>Style Guide</h1>
     <div id="main">
-        <div class="container my-5">
+        <div class="my-5">
             <div class="row">
                 <div class="col-12">
                     <section class="my-5" id="gettingStarted">
@@ -2723,7 +2704,19 @@
                 $sidenavFooter.hide();
             });
 
-            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="tooltip"]').tooltip();
+
+            const leftNavItems = document.getElementById('leftNav');
+            leftNavItems.addEventListener('click', function(event) {
+                let list = leftNavItems.querySelectorAll('a');
+                for (let i = 0; i < list.length; i++) {
+                    list[i].removeAttribute('class');
+                    if (list[i].innerHTML === event.target.innerHTML) {
+                        event.target.className = 'active';
+                    }
+                }
+                $('#responsive-nav').trigger('click');
+            });
         });
     </script>
 </body>

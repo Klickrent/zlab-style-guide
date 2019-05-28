@@ -11,7 +11,7 @@ $border-color: #C6C7C7;
       font-weight: bold;
       background-color: $color-lighter-gray;
       border-bottom: 2px solid $color-primary;
-      padding: 18px 13px 18px 13px;
+      padding: 19px 15px 18px 15px;
       white-space: nowrap;
 
       .zamicon {
@@ -84,11 +84,7 @@ $border-color: #C6C7C7;
 
   td, th {
     border-top: none;
-    padding: 13px;
-  }
-
-  td {
-    line-height: 1;
+    padding: 13px 15px 14px 15px;
   }
 
   th {

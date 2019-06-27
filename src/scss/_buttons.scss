@@ -98,6 +98,36 @@
     }
   }
 
+  &.btn-success {
+    background-color: $color-success;
+    border-color: $color-white;
+    color: $color-white;
+
+    &:active,
+    &:active:focus,
+    &:focus {
+      background-color: $color-success;
+      border-color: $color-white;
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: $color-success-dark;
+      border-color: $color-white;
+      color: $color-white;
+    }
+
+    &:disabled {
+      background-color: $color-success-light;
+      border-color: $color-white;
+      color: $color-success;
+    }
+    &:disabled:hover {
+      background-color: $color-success-light;
+      border-color: $color-white;
+      color: $color-success;
+    }
+  }
   &.btn-outline-secondary {
     background-color: $color-white;
     border: 1px solid $color-secondary;
@@ -119,6 +149,29 @@
       color: $color-dark;
     }
   }
+    
+  &.btn-success-outline {
+    background-color: $color-white;
+    border: 1px solid $color-success;
+    border-color: $color-success;
+    color: $color-dark;
+    padding: 14px 30px;
+
+    &:active,
+    &:active:focus,
+    &:focus {
+      background-color: $color-white;
+      border-color: $color-success;
+      color: $color-dark;
+    }
+
+    &:hover {
+      background-color: $color-success-light;
+      border-color: $color-success;
+      color: $color-dark;
+    }
+  }
+
 
   &.btn-dark {
     &:disabled {

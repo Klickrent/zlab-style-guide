@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'zamicon';
-  src: url('../fonts/zamicon-v1.3.1.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/zamicon-v1.3.1.eot?iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/zamicon-v1.3.1.woff2') format('woff2'), /* Edge 14+, Chrome 36+, Firefox 39+, some mobile */
-    url('../fonts/zamicon-v1.3.1.woff') format('woff'),  /* IE 9+, Edge, Firefox 3.6+, Chrome 5+, Safari 5.1+ */
-    url('../fonts/zamicon-v1.3.1.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/zamicon-v1.3.1.svg') format('svg'); /* Legacy iOS */
+  src: url('../fonts/zamicon-v1.3.3.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/zamicon-v1.3.3.eot?iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/zamicon-v1.3.3.woff2') format('woff2'), /* Edge 14+, Chrome 36+, Firefox 39+, some mobile */
+    url('../fonts/zamicon-v1.3.3.woff') format('woff'),  /* IE 9+, Edge, Firefox 3.6+, Chrome 5+, Safari 5.1+ */
+    url('../fonts/zamicon-v1.3.3.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/zamicon-v1.3.3.svg') format('svg'); /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
 }
@@ -151,60 +151,63 @@
 .zamicon-plus:before {
   content: '\F029'
 }
-.zamicon-scan-off:before {
+.zamicon-save:before {
   content: '\F02A'
 }
-.zamicon-scan:before {
+.zamicon-scan-off:before {
   content: '\F02B'
 }
-.zamicon-search:before {
+.zamicon-scan:before {
   content: '\F02C'
 }
-.zamicon-settings:before {
+.zamicon-search:before {
   content: '\F02D'
 }
-.zamicon-shopping-cart:before {
+.zamicon-settings:before {
   content: '\F02E'
 }
-.zamicon-state-available:before {
+.zamicon-shopping-cart:before {
   content: '\F02F'
 }
-.zamicon-state-idle:before {
+.zamicon-state-available:before {
   content: '\F030'
 }
-.zamicon-state-in-use:before {
+.zamicon-state-idle:before {
   content: '\F031'
 }
-.zamicon-state-repair:before {
+.zamicon-state-in-use:before {
   content: '\F032'
 }
-.zamicon-state-transport-incoming:before {
+.zamicon-state-repair:before {
   content: '\F033'
 }
-.zamicon-state-transport-outgoing:before {
+.zamicon-state-transport-incoming:before {
   content: '\F034'
 }
-.zamicon-state-transport:before {
+.zamicon-state-transport-outgoing:before {
   content: '\F035'
 }
-.zamicon-success:before {
+.zamicon-state-transport:before {
   content: '\F036'
 }
-.zamicon-table:before {
+.zamicon-success:before {
   content: '\F037'
 }
-.zamicon-three-dots:before {
+.zamicon-table:before {
   content: '\F038'
 }
-.zamicon-upload:before {
+.zamicon-three-dots:before {
   content: '\F039'
 }
-.zamicon-user-off:before {
+.zamicon-upload:before {
   content: '\F03A'
 }
-.zamicon-user:before {
+.zamicon-user-off:before {
   content: '\F03B'
 }
-.zamicon-wifi-error:before {
+.zamicon-user:before {
   content: '\F03C'
+}
+.zamicon-wifi-error:before {
+  content: '\F03D'
 }

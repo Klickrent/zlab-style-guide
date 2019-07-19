@@ -11,11 +11,10 @@ npm install github:Klickrent/zlab-style-guide
 ## Adding new zamicons
 
 1. create a branch from master
-2. collect your svg images, one or more (be aware of naming for those images,
-rules are to use minus(-) between words and all letters have to be lowercase **kebab-case**).
-3. upload svg images (one or more) into folder: src/images/zamicons/
-4. open `package.json` file and update the version number, e.g. now it is 1.3.27, it will be 1.3.28 (increment last number)
-5. open `docs/index.html`, at the end of file, in section icons, add a `<li>` element putting the new icon in the right place (alphabetically sorted), the name of the icon have to be prepend with `zamicon-`, e.g. `scan-asset` became `zamicon-scan-asset`
+2. collect your svg images, one or more (please use the naming conventions: minus (-) to split the words and only lowercase letters, called **kebab-case**)
+3. copy svg images (one or more) into folder: src/images/zamicons/
+4. open `package.json` file and update the version number by incrementing the last number, i.e. 1.3.27, will become 1.3.28
+5. open `docs/index.html`. At the end of file, in the icons section, add a `<li>` element putting the new icon in the right place (alphabetically sorted). The name of the icon has to be prefixed with `zamicon-`, e.g. `scan-asset` will become `zamicon-scan-asset`
 6. run the build process: `./runtask.sh build`
 7. test it (open `docs/index.html` in a browser)
 8. create a pull request

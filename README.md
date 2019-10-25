@@ -18,6 +18,6 @@ npm install github:Klickrent/zlab-style-guide
 6. run the build process: `./runtask.sh build`
 7. test it (open `docs/index.html` in a browser)
 8. Create a new tag in git with `git tag v1.x.x` to match the version in the package.json to indicate that the module has a new version to NPM
-8. create a pull request
+9. create a pull request
 
 Some of the included icons are made by [Gregor Cresnar](https://www.flaticon.com/authors/gregor-cresnar) and [Freepik](https://www.freepik.com) - distributed via [www.flaticon.com](https://www.flaticon.com). All are available under the [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/) license.

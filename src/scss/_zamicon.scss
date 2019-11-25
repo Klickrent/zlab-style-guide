@@ -199,27 +199,30 @@
 .zamicon-state-transport:before {
   content: '\F039'
 }
-.zamicon-success:before {
+.zamicon-state-unseen:before {
   content: '\F03A'
 }
-.zamicon-table:before {
+.zamicon-success:before {
   content: '\F03B'
 }
-.zamicon-three-dots:before {
+.zamicon-table:before {
   content: '\F03C'
 }
-.zamicon-upload:before {
+.zamicon-three-dots:before {
   content: '\F03D'
 }
-.zamicon-user-off:before {
+.zamicon-upload:before {
   content: '\F03E'
 }
-.zamicon-user:before {
+.zamicon-user-off:before {
   content: '\F03F'
 }
-.zamicon-whatsapp:before {
+.zamicon-user:before {
   content: '\F040'
 }
-.zamicon-wifi-error:before {
+.zamicon-whatsapp:before {
   content: '\F041'
+}
+.zamicon-wifi-error:before {
+  content: '\F042'
 }

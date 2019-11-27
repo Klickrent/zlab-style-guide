@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'zamicon';
-  src: url('../fonts/zamicon-v1.3.6.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/zamicon-v1.3.6.eot?iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/zamicon-v1.3.6.woff2') format('woff2'), /* Edge 14+, Chrome 36+, Firefox 39+, some mobile */
-    url('../fonts/zamicon-v1.3.6.woff') format('woff'),  /* IE 9+, Edge, Firefox 3.6+, Chrome 5+, Safari 5.1+ */
-    url('../fonts/zamicon-v1.3.6.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/zamicon-v1.3.6.svg') format('svg'); /* Legacy iOS */
+  src: url('../fonts/zamicon-v1.3.7.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/zamicon-v1.3.7.eot?iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/zamicon-v1.3.7.woff2') format('woff2'), /* Edge 14+, Chrome 36+, Firefox 39+, some mobile */
+    url('../fonts/zamicon-v1.3.7.woff') format('woff'),  /* IE 9+, Edge, Firefox 3.6+, Chrome 5+, Safari 5.1+ */
+    url('../fonts/zamicon-v1.3.7.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/zamicon-v1.3.7.svg') format('svg'); /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
 }
@@ -199,27 +199,30 @@
 .zamicon-state-transport:before {
   content: '\F039'
 }
-.zamicon-success:before {
+.zamicon-state-unseen:before {
   content: '\F03A'
 }
-.zamicon-table:before {
+.zamicon-success:before {
   content: '\F03B'
 }
-.zamicon-three-dots:before {
+.zamicon-table:before {
   content: '\F03C'
 }
-.zamicon-upload:before {
+.zamicon-three-dots:before {
   content: '\F03D'
 }
-.zamicon-user-off:before {
+.zamicon-upload:before {
   content: '\F03E'
 }
-.zamicon-user:before {
+.zamicon-user-off:before {
   content: '\F03F'
 }
-.zamicon-whatsapp:before {
+.zamicon-user:before {
   content: '\F040'
 }
-.zamicon-wifi-error:before {
+.zamicon-whatsapp:before {
   content: '\F041'
+}
+.zamicon-wifi-error:before {
+  content: '\F042'
 }

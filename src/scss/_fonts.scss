@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 100;
   src: url(../fonts/Roboto-Thin.ttf);
-  src: local('Roboto Light');
+  src: local('Roboto Light')
 }
 
 @font-face {
@@ -30,10 +30,10 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Medium.ttf);
   src: local('Roboto Medium'),
   local('Roboto-Medium'),
-  url(../fonts/Roboto-Regular.ttf) format('truetype') // Safari, Android, iOS
+  url(../fonts/Roboto-Medium.ttf) format('truetype') // Safari, Android, iOS
 }
 
 @font-face {

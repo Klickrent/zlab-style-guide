@@ -1,5 +1,5 @@
 # Zeppelin Lab GmbH Styleguide
-This is the Z-Lab wide Styleguide project, to be used by all the ventures.
+This is the Z-Lab wide Styleguide project, to be used by all the ventures. It can be previewed here: https://klickrent.github.io/zlab-style-guide/
 
 ## Usage
 

@@ -1,5 +1,11 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const isDevMode = process.env.NODE_ENV !== 'production';
+
+const plugins = [];
+if (!isDevMode) {
+    plugins.push(new MiniCssExtractPlugin({ filename: 'css/main.css' }));
+}
 
 module.exports = {
     mode: 'production',
@@ -16,31 +22,23 @@ module.exports = {
     watchOptions: {
         poll: 1000
     },
-    plugins: [
-        new ExtractTextPlugin({
-            filename: 'css/main.css'
-        })
-    ],
-
+    plugins: plugins,
     module: {
         rules: [
             {
                 test: /\.(s*)css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: [
-                        {
-                            loader: 'css-loader'
-                        },
-                        {
-                            loader: 'sass-loader'
-                        }
-                    ]
-                })
+                use: [
+                    isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader'
+                ]
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                loader: 'url-loader?limit=5100000'
+                loader: 'url-loader',
+                options: {
+                    limit: 5100000
+                }
             }
         ]
     }

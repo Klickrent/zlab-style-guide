@@ -13,15 +13,15 @@ const ttf2woff2 = require('ttf2woff2');
 const cssesc = require('cssesc');
 const mkdirp = require('mkdirp');
 const sanitizeFileName = require('sanitize-filename');
-const {readDirDeep} = require('./src/utils/util');
-const {ArgumentParser} = require('argparse');
+const { readDirDeep } = require('./src/utils/util');
+const { ArgumentParser } = require('argparse');
 const version = require('./package.json').version;
-
 const parser = new ArgumentParser({
     version: version,
     addHelp: true,
     description: "Converts a directory full of SVG icons into webfonts"
 });
+
 parser.addArgument(
     'src',
     {
@@ -89,12 +89,10 @@ parser.addArgument(
 
 const args = parser.parseArgs();
 
-if(!args.prefix && !args.base) {
+if (!args.prefix && !args.base) {
     console.error(`${path.basename(process.argv[1])}: Not enough arguments. Either --prefix, --base or both must be provided.`);
     process.exit(1);
 }
-
-// console.log(args);process.exit();
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -118,7 +116,6 @@ const woff2FontFile = `${outputDirFont}/${fileName}-v${version}.woff2`;
 const eotFile = `${outputDirFont}/${fileName}-v${version}.eot`;
 const cssFile = `${outputDirStyle}/_${fileName}.scss`;
 
-
 mkdirp.sync(outputDirFont);
 
 const fontStream = new SVGIcons2SVGFontStream({
@@ -133,7 +130,8 @@ const fontStream = new SVGIcons2SVGFontStream({
 
 const svgFileStream = fs.createWriteStream(svgFontFile);
 
-fontStream.pipe(svgFileStream)
+fontStream
+    .pipe(svgFileStream)
     .on('finish', function() {
         console.log(`Wrote ${svgFontFile}`);
         createFonts();
@@ -142,14 +140,10 @@ fontStream.pipe(svgFileStream)
         console.log(err);
     });
 
-
 readDirDeep(inputDir).then(icons => {
     icons = icons.filter(filename => /\.svg$/i.test(filename));
     const collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
     icons.sort(collator.compare);
-
-    // console.log(icons);process.exit();
-
     let codePointCounter = 0xF000;
 
     const cssDir = path.dirname(cssFile);
@@ -230,19 +224,22 @@ ${cssBase ? `.${cssId(cssBase)}:before` : `[class^="${cssId(cssPrefix)}"]:before
 });
 
 function createFonts() {
-    let svgString = fs.readFileSync(svgFontFile, {encoding: 'utf8'});
+    const svgString = fs.readFileSync(svgFontFile, { encoding: 'utf8' });
     const ttf = svg2ttf(svgString, {});
+
     fs.writeFileSync(ttfFontFile, ttf.buffer);
     console.log(`Wrote ${ttfFontFile}`);
 
-    let ttfBuffer = fs.readFileSync(ttfFontFile);
+    const ttfBuffer = fs.readFileSync(ttfFontFile);
     const woff = ttf2woff(ttfBuffer, {});
+
     fs.writeFileSync(woffFontFile, woff.buffer);
     console.log(`Wrote ${woffFontFile}`);
-
     fs.writeFileSync(woff2FontFile, ttf2woff2(ttfBuffer));
     console.log(`Wrote ${woff2FontFile}`);
 
-    fs.writeFileSync(eotFile, ttf2eot(ttfBuffer));
+    const eot = ttf2eot(ttf.toArray());
+
+    fs.writeFileSync(eotFile, eot.toArray());
     console.log(`Wrote ${eotFile}`);
 }

@@ -3,7 +3,7 @@ version: '3.7'
 services:
   # Build the frontend files for zlab-style-guide-frontend and run frontend tests
   zlab-style-guide-build:
-    image: node
+    image: node:15.14.0-alpine
     container_name: zlab-style-guide-build
     working_dir: /app
     volumes:

@@ -5,23 +5,23 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 build() {
-    docker-compose run --name $docker_build --rm $docker_build sh -c "npm run build"
+    docker-compose run --name $docker_build --rm $docker_build sh -c "yarn build"
 }
 
 copy_font_folder() {
-    docker-compose run --name $docker_build --rm $docker_build sh -c "npm run copy-font-folder"
+    docker-compose run --name $docker_build --rm $docker_build sh -c "yarn copy-font-folder"
 }
 
 generate_icon_font() {
-    docker-compose run --name $docker_build --rm $docker_build sh -c "npm run generate-icon-font"
+    docker-compose run --name $docker_build --rm $docker_build sh -c "yarn generate-icon-font"
 }
 
 init() {
-    docker-compose run --name $docker_build --rm $docker_build sh -c "npm run init"
+    docker-compose run --name $docker_build --rm $docker_build sh -c "yarn init"
 }
 
 watch() {
-    docker-compose run --name $docker_build --rm $docker_build sh -c "npm run watch"
+    docker-compose run --name $docker_build --rm $docker_build sh -c "yarn watch"
 }
 
 show_commands() {

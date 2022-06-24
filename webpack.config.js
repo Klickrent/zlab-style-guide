@@ -1,11 +1,6 @@
-const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const isDevMode = process.env.NODE_ENV !== 'production';
-
-const plugins = [];
-if (!isDevMode) {
-    plugins.push(new MiniCssExtractPlugin({ filename: 'css/main.css' }));
-}
+const path = require('path');
+const plugins = [ new MiniCssExtractPlugin({ filename: 'css/main.css' }) ];
 
 module.exports = {
     mode: 'production',
@@ -14,21 +9,15 @@ module.exports = {
         filename: 'js/main.js',
         path: path.resolve(__dirname, 'dist')
     },
-    resolve: {
-        alias: {
-            'jquery': 'jquery/dist/jquery.slim.js'
-        }
-    },
-    watchOptions: {
-        poll: 1000
-    },
+    resolve: { alias: { 'jquery': 'jquery/dist/jquery.slim.js' } },
+    watchOptions: { poll: 1000 },
     plugins: plugins,
     module: {
         rules: [
             {
                 test: /\.(s*)css$/,
                 use: [
-                    isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader'
                 ]

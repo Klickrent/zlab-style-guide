@@ -20,15 +20,10 @@ init() {
     docker-compose run --name $docker_build --rm $docker_build sh -c "yarn init"
 }
 
-watch() {
-    docker-compose run --name $docker_build --rm $docker_build sh -c "yarn watch"
-}
-
 show_commands() {
     echo "Supported commands:"
     echo "${bold}init${normal} to install all package dependencies"
     echo "${bold}build${normal} to (re)build the styleguide HTML page"
-    echo "${bold}watch${normal} watch the project for file changes and trigger a build"
     echo "${bold}generate:font${normal} generate zamicon font from svg images and store it an extra folder for now"
     echo "${bold}copy:font-folder${normal} to copy the font folder from source to distributable"
     echo "${bold}cli${normal} Runs the given command in the frontend build container"
@@ -47,10 +42,6 @@ case $1 in
 
     init)
         init
-    ;;
-
-    watch)
-        watch
     ;;
 
     copy:font-folder)

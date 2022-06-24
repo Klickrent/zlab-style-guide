@@ -133,7 +133,7 @@ const svgFileStream = fs.createWriteStream(svgFontFile);
 fontStream
     .pipe(svgFileStream)
     .on('finish', function() {
-        console.log(`Wrote ${svgFontFile}`);
+        console.log(`[SVG] Wrote ${svgFontFile}`);
         createFonts();
     })
     .on('error', function(err) {
@@ -219,7 +219,7 @@ ${cssBase ? `.${cssId(cssBase)}:before` : `[class^="${cssId(cssPrefix)}"]:before
 
     fs.writeFile(cssFile, css, {encoding: 'utf8'}, err => {
         if(err) throw err;
-        console.log(`Wrote ${cssFile}`);
+        console.log(`[SCSS] Wrote ${cssFile}`);
     });
 });
 
@@ -228,18 +228,18 @@ function createFonts() {
     const ttf = svg2ttf(svgString, {});
 
     fs.writeFileSync(ttfFontFile, ttf.buffer);
-    console.log(`Wrote ${ttfFontFile}`);
+    console.log(`[TTF] Wrote ${ttfFontFile}`);
 
     const ttfBuffer = fs.readFileSync(ttfFontFile);
     const woff = ttf2woff(ttfBuffer, {});
 
-    fs.writeFileSync(woffFontFile, woff.buffer);
-    console.log(`Wrote ${woffFontFile}`);
+    fs.writeFileSync(woffFontFile, woff);
+    console.log(`[WOFF] Wrote ${woffFontFile}`);
     fs.writeFileSync(woff2FontFile, ttf2woff2(ttfBuffer));
-    console.log(`Wrote ${woff2FontFile}`);
+    console.log(`[WOFF2] Wrote ${woff2FontFile}`);
 
     const eot = ttf2eot(ttf.toArray());
 
-    fs.writeFileSync(eotFile, eot.toArray());
-    console.log(`Wrote ${eotFile}`);
+    fs.writeFileSync(eotFile, eot);
+    console.log(`[EOT] Wrote ${eotFile}`);
 }

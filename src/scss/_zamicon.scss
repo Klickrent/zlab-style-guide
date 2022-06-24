@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'zamicon';
-  src: url('../fonts/zamicon-v1.4.3.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/zamicon-v1.4.3.eot?iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/zamicon-v1.4.3.woff2') format('woff2'), /* Edge 14+, Chrome 36+, Firefox 39+, some mobile */
-    url('../fonts/zamicon-v1.4.3.woff') format('woff'),  /* IE 9+, Edge, Firefox 3.6+, Chrome 5+, Safari 5.1+ */
-    url('../fonts/zamicon-v1.4.3.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/zamicon-v1.4.3.svg') format('svg'); /* Legacy iOS */
+  src: url('../fonts/zamicon-v1.4.4.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/zamicon-v1.4.4.eot?iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/zamicon-v1.4.4.woff2') format('woff2'), /* Edge 14+, Chrome 36+, Firefox 39+, some mobile */
+    url('../fonts/zamicon-v1.4.4.woff') format('woff'),  /* IE 9+, Edge, Firefox 3.6+, Chrome 5+, Safari 5.1+ */
+    url('../fonts/zamicon-v1.4.4.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/zamicon-v1.4.4.svg') format('svg'); /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
 }
@@ -25,219 +25,270 @@
 .zamicon:before {
   color: #555F60;
 }
-.zamicon-antenna:before {
+.zamicon-add:before {
   content: '\F000'
 }
-.zamicon-arrow-drop-down:before {
+.zamicon-antenna:before {
   content: '\F001'
 }
-.zamicon-arrow-drop-up:before {
+.zamicon-arrow-down:before {
   content: '\F002'
 }
-.zamicon-arrow-left:before {
+.zamicon-arrow-drop-down:before {
   content: '\F003'
 }
-.zamicon-arrow-right:before {
+.zamicon-arrow-drop-up:before {
   content: '\F004'
 }
-.zamicon-assign-to-location:before {
+.zamicon-arrow-left:before {
   content: '\F005'
 }
-.zamicon-back:before {
+.zamicon-arrow-right:before {
   content: '\F006'
 }
-.zamicon-calendar:before {
+.zamicon-arrow-up:before {
   content: '\F007'
 }
-.zamicon-camera-success:before {
+.zamicon-asset-collection:before {
   content: '\F008'
 }
-.zamicon-camera-switch:before {
+.zamicon-asset-single:before {
   content: '\F009'
 }
-.zamicon-camera:before {
+.zamicon-assign-to-location:before {
   content: '\F00A'
 }
-.zamicon-cancel-bold:before {
+.zamicon-back:before {
   content: '\F00B'
 }
-.zamicon-cancel-in-circle:before {
+.zamicon-calendar:before {
   content: '\F00C'
 }
-.zamicon-cancel:before {
+.zamicon-camera-success:before {
   content: '\F00D'
 }
-.zamicon-caret-sort-asc:before {
+.zamicon-camera-switch:before {
   content: '\F00E'
 }
-.zamicon-caret-sort-desc:before {
+.zamicon-camera:before {
   content: '\F00F'
 }
-.zamicon-caret-sort:before {
+.zamicon-cancel-bold:before {
   content: '\F010'
 }
-.zamicon-connect-tracker:before {
+.zamicon-cancel-in-circle:before {
   content: '\F011'
 }
-.zamicon-delete:before {
+.zamicon-cancel:before {
   content: '\F012'
 }
-.zamicon-download:before {
+.zamicon-caret-sort-asc:before {
   content: '\F013'
 }
-.zamicon-edit:before {
+.zamicon-caret-sort-desc:before {
   content: '\F014'
 }
-.zamicon-error:before {
+.zamicon-caret-sort:before {
   content: '\F015'
 }
-.zamicon-favorite-selected:before {
+.zamicon-connect-tracker:before {
   content: '\F016'
 }
-.zamicon-favorite-unselected:before {
+.zamicon-delete:before {
   content: '\F017'
 }
-.zamicon-filter:before {
+.zamicon-download:before {
   content: '\F018'
 }
-.zamicon-flash:before {
+.zamicon-edit:before {
   content: '\F019'
 }
-.zamicon-forum:before {
+.zamicon-employee:before {
   content: '\F01A'
 }
-.zamicon-gallery:before {
+.zamicon-error:before {
   content: '\F01B'
 }
-.zamicon-gift:before {
+.zamicon-favorite-selected:before {
   content: '\F01C'
 }
-.zamicon-hamburger:before {
+.zamicon-favorite-unselected:before {
   content: '\F01D'
 }
-.zamicon-heart:before {
+.zamicon-filter:before {
   content: '\F01E'
 }
-.zamicon-help:before {
+.zamicon-flash:before {
   content: '\F01F'
 }
-.zamicon-import:before {
+.zamicon-forum:before {
   content: '\F020'
 }
-.zamicon-info:before {
+.zamicon-gallery:before {
   content: '\F021'
 }
-.zamicon-list-2:before {
+.zamicon-gift:before {
   content: '\F022'
 }
-.zamicon-list:before {
+.zamicon-hamburger:before {
   content: '\F023'
 }
-.zamicon-location-off:before {
+.zamicon-heart:before {
   content: '\F024'
 }
-.zamicon-location:before {
+.zamicon-help-circle:before {
   content: '\F025'
 }
-.zamicon-logout:before {
+.zamicon-help:before {
   content: '\F026'
 }
-.zamicon-mail:before {
+.zamicon-import:before {
   content: '\F027'
 }
-.zamicon-mic:before {
+.zamicon-info-2:before {
   content: '\F028'
 }
-.zamicon-nfc-scan:before {
+.zamicon-info:before {
   content: '\F029'
 }
-.zamicon-overview:before {
+.zamicon-inspection:before {
   content: '\F02A'
 }
-.zamicon-password-hide:before {
+.zamicon-label:before {
   content: '\F02B'
 }
-.zamicon-password-show:before {
+.zamicon-list-2:before {
   content: '\F02C'
 }
-.zamicon-phone-call:before {
+.zamicon-list:before {
   content: '\F02D'
 }
-.zamicon-phone:before {
+.zamicon-location-off:before {
   content: '\F02E'
 }
-.zamicon-plus:before {
+.zamicon-location:before {
   content: '\F02F'
 }
-.zamicon-qr-scan:before {
+.zamicon-logout:before {
   content: '\F030'
 }
-.zamicon-remove-tracker:before {
+.zamicon-mail:before {
   content: '\F031'
 }
-.zamicon-save:before {
+.zamicon-mic:before {
   content: '\F032'
 }
-.zamicon-scan-off:before {
+.zamicon-nfc-scan:before {
   content: '\F033'
 }
-.zamicon-scan:before {
+.zamicon-notifications-new:before {
   content: '\F034'
 }
-.zamicon-search:before {
+.zamicon-notifications:before {
   content: '\F035'
 }
-.zamicon-settings:before {
+.zamicon-overview:before {
   content: '\F036'
 }
-.zamicon-shopping-cart:before {
+.zamicon-password-hide:before {
   content: '\F037'
 }
-.zamicon-state-available:before {
+.zamicon-password-show:before {
   content: '\F038'
 }
-.zamicon-state-idle:before {
+.zamicon-phone-call:before {
   content: '\F039'
 }
-.zamicon-state-in-use:before {
+.zamicon-phone:before {
   content: '\F03A'
 }
-.zamicon-state-repair:before {
+.zamicon-plus:before {
   content: '\F03B'
 }
-.zamicon-state-transport-incoming:before {
+.zamicon-qr-scan:before {
   content: '\F03C'
 }
-.zamicon-state-transport-outgoing:before {
+.zamicon-reload:before {
   content: '\F03D'
 }
-.zamicon-state-transport:before {
+.zamicon-remove-tracker:before {
   content: '\F03E'
 }
-.zamicon-state-unseen:before {
+.zamicon-remove:before {
   content: '\F03F'
 }
-.zamicon-success:before {
+.zamicon-save:before {
   content: '\F040'
 }
-.zamicon-table:before {
+.zamicon-scan-off:before {
   content: '\F041'
 }
-.zamicon-three-dots:before {
+.zamicon-scan:before {
   content: '\F042'
 }
-.zamicon-upload:before {
+.zamicon-search:before {
   content: '\F043'
 }
-.zamicon-user-off:before {
+.zamicon-settings:before {
   content: '\F044'
 }
-.zamicon-user:before {
+.zamicon-shopping-cart:before {
   content: '\F045'
 }
-.zamicon-whatsapp:before {
+.zamicon-state-available:before {
   content: '\F046'
 }
-.zamicon-wifi-error:before {
+.zamicon-state-idle:before {
   content: '\F047'
+}
+.zamicon-state-in-use:before {
+  content: '\F048'
+}
+.zamicon-state-repair:before {
+  content: '\F049'
+}
+.zamicon-state-transport-incoming:before {
+  content: '\F04A'
+}
+.zamicon-state-transport-outgoing:before {
+  content: '\F04B'
+}
+.zamicon-state-transport:before {
+  content: '\F04C'
+}
+.zamicon-state-unseen:before {
+  content: '\F04D'
+}
+.zamicon-success-circle:before {
+  content: '\F04E'
+}
+.zamicon-success:before {
+  content: '\F04F'
+}
+.zamicon-table:before {
+  content: '\F050'
+}
+.zamicon-three-dots:before {
+  content: '\F051'
+}
+.zamicon-upload:before {
+  content: '\F052'
+}
+.zamicon-user-add:before {
+  content: '\F053'
+}
+.zamicon-user-off:before {
+  content: '\F054'
+}
+.zamicon-user-update:before {
+  content: '\F055'
+}
+.zamicon-user:before {
+  content: '\F056'
+}
+.zamicon-whatsapp:before {
+  content: '\F057'
+}
+.zamicon-wifi-error:before {
+  content: '\F058'
 }

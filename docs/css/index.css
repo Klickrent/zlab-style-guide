@@ -290,3 +290,7 @@ h1 {
     line-height: 1;
     margin: 0;
 }
+.text-italic {
+    font-style: italic;
+    font-weight: 300;
+}

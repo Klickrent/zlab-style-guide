@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="16" height="16" viewBox="0 0 16 16">
+    <path
+        d="M7.667 0L4.667 0 8 4.667 4.667 9.333 7.667 9.333 11 4.667z"
+        fill="#555F60"
+        transform="translate(2.667 3.333)"
+    />
+    <path
+        d="M3 0L0 0 3.333 4.667 0 9.333 3 9.333 6.333 4.667z"
+        fill="#555F60"
+        transform="translate(2.667 3.333)"
+    />
+</svg>

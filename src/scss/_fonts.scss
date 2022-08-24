@@ -4,18 +4,28 @@
   font-style: normal;
   font-weight: 100;
   src: url(../fonts/Roboto-Thin.ttf);
-  src: local('Roboto Light')
+  src: local('Roboto Light'),
+  local('Roboto-Light'),
+  url(../fonts/Roboto-Thin.ttf) format('truetype'); // Safari, Android, iOS
 }
-
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: url(../fonts/Roboto-Italic.ttf);
+  src: local('Roboto Italic'),
+  local('Roboto-Italic'),
+  url(../fonts/Roboto-Italic.ttf) format('truetype'); // Safari, Android, iOS
+}
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   src: url(../fonts/Roboto-Light.ttf);
-  src: local('Roboto Light');
-
+  src: local('Roboto Light'),
+  local('Roboto-Light'),
+  url(../fonts/Roboto-Light.ttf) format('truetype'); // Safari, Android, iOS
 }
-
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -25,7 +35,6 @@
   local('Roboto-Medium'),
   url(../fonts/Roboto-Regular.ttf) format('truetype') // Safari, Android, iOS
 }
-
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -33,9 +42,8 @@
   src: url(../fonts/Roboto-Medium.ttf);
   src: local('Roboto Medium'),
   local('Roboto-Medium'),
-  url(../fonts/Roboto-Medium.ttf) format('truetype') // Safari, Android, iOS
+  url(../fonts/Roboto-Medium.ttf) format('truetype'); // Safari, Android, iOS
 }
-
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -43,10 +51,8 @@
   src: url(../fonts/Roboto-Bold.ttf);
   src: local('Roboto Bold'),
   local('Roboto-Bold'),
-  url(../fonts/Roboto-Bold.ttf) format('truetype') // Safari, Android, iOS
-
+  url(../fonts/Roboto-Bold.ttf) format('truetype'); // Safari, Android, iOS
 }
-
 @font-face {
   font-family: 'Teko';
   font-style: normal;

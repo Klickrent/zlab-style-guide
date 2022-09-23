@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
-const plugins = [ new MiniCssExtractPlugin({ filename: 'css/main.css' }) ];
+const webpack = require('webpack');
 
 module.exports = {
     mode: 'production',
@@ -9,9 +9,19 @@ module.exports = {
         filename: 'js/main.js',
         path: path.resolve(__dirname, 'dist')
     },
-    resolve: { alias: { 'jquery': 'jquery/dist/jquery.slim.js' } },
-    watchOptions: { poll: 1000 },
-    plugins: plugins,
+    resolve: {
+        alias: { 'jquery': 'jquery/dist/jquery.min.js' }
+    },
+    watchOptions: {
+        poll: 1000
+    },
+    plugins: [
+        new MiniCssExtractPlugin({ filename: 'css/main.css' }),
+        new webpack.ProvidePlugin({
+            jQuery: 'jquery',
+            Popper: ['popper.js', 'default']
+        })
+    ],
     module: {
         rules: [
             {

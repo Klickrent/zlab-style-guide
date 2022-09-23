@@ -1988,34 +1988,68 @@
                             </button>
                         </div>
                     </section><!-- End section: Snackbar -->
+
+                    <!-- Start section: Tooltips -->
                     <section class="mb-5" id="tooltips">
                         <div class="h2 underline-primary mb-5">
                             Tooltips
                         </div>
                         <div class="row">
-                            <div class="col-12 order-2 col-md-8 order-md-1">
-                                <div class="tooltip bs-tooltip-top" role="tooltip">
-                                    <div class="arrow"></div>
-                                    <div class="tooltip-inner">
-                                        Some tooltip text!
-                                    </div>
-                                </div>
-                                Some info text
+                            <div class="col-12">
+                                <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    Tooltip on top
+                                </button>
+                                <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                                    Tooltip on right
+                                </button>
+                                <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                    Tooltip on bottom
+                                </button>
+                                <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                                    Tooltip on left
+                                </button>
+                                <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                                    Tooltip with HTML
+                                </button>
                             </div>
-                            <div class="col-12 order-1 col-md-4 order-md-2">
-                                <em>Note, we use a tooltip Tooltip.vue for this</em>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-inline-block" data-toggle="tooltip" data-placement="auto" title="Some tooltip text!">
+                                    Some info text...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                Just initialize after document is ready <code>$('[data-toggle="tooltip"]').tooltip();</code> or a specific tooltip with <code>$('#example').tooltip(options)</code>.
+                            </div>
+                            <div class="col-12 mt-2">
+                                Additional infos: <a href="https://getbootstrap.com/docs/4.0/components/tooltips/">Tooltips</a>.
                             </div>
                         </div>
                         <div class="code-example col-12 col-md8 order-m1">
-                            <div class="tooltip bs-tooltip-top" role="tooltip">
-                                <div class="arrow"></div>
-                                <div class="tooltip-inner">
-                                    Some tooltip text!
-                                </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                Tooltip on top
+                            </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                                Tooltip on right
+                            </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                Tooltip on bottom
+                            </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                                Tooltip on left
+                            </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                                Tooltip with HTML
+                            </button>
+                            <div class="d-inline-block" data-toggle="tooltip" data-placement="auto" title="Some tooltip text!">
+                                Some info text...
                             </div>
                         </div>
-                    </section>
-                    <!-- End section: Tolltip -->
+                    </section><!-- End section: Tooltips -->
+
                     <!-- Start section: Sidebar -->
                     <section class="mb-5" id="sidebar">
                         <div class="h2 underline-primary mb-5">
@@ -2823,18 +2857,9 @@
         </div>
     </div>
 </main>
-
-
-
-
-
-
-
-
-
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- Bootstrap | Material core JavaScript -->
-    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <!-- SnackbarJS -->
     <script src="js/snackbar.min.js"></script>

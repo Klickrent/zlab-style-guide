@@ -23,10 +23,10 @@ module.exports = {
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                loader: 'url-loader',
-                options: {
-                    limit: 5100000
-                }
+                type: 'asset/resource',
+                generator: {
+                    filename: './fonts/[name][ext]',
+                },
             }
         ]
     }

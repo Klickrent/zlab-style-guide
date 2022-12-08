@@ -1,6 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
-const plugins = [ new MiniCssExtractPlugin({ filename: 'css/main.css' }) ];
 
 module.exports = {
     mode: 'production',
@@ -11,7 +10,7 @@ module.exports = {
     },
     resolve: { alias: { 'jquery': 'jquery/dist/jquery.slim.js' } },
     watchOptions: { poll: 1000 },
-    plugins: plugins,
+    plugins: [ new MiniCssExtractPlugin({ filename: 'css/main.css' }) ],
     module: {
         rules: [
             {
@@ -24,10 +23,10 @@ module.exports = {
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                loader: 'url-loader',
-                options: {
-                    limit: 5100000
-                }
+                type: 'asset/resource',
+                generator: {
+                    filename: './fonts/[name][ext]',
+                },
             }
         ]
     }

@@ -1,6 +1,6 @@
 {
     "name": "zlab-style-guide",
-    "version": "1.4.17",
+    "version": "1.4.18",
     "description": "Zeppelin Lab GmbH Style Guide",
     "private": true,
     "main": "dist",

@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'zamicon';
-  src: url('../fonts/zamicon-v1.4.17.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/zamicon-v1.4.17.eot?iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/zamicon-v1.4.17.woff2') format('woff2'), /* Edge 14+, Chrome 36+, Firefox 39+, some mobile */
-    url('../fonts/zamicon-v1.4.17.woff') format('woff'),  /* IE 9+, Edge, Firefox 3.6+, Chrome 5+, Safari 5.1+ */
-    url('../fonts/zamicon-v1.4.17.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/zamicon-v1.4.17.svg') format('svg'); /* Legacy iOS */
+  src: url('../fonts/zamicon-v1.4.18.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/zamicon-v1.4.18.eot?iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/zamicon-v1.4.18.woff2') format('woff2'), /* Edge 14+, Chrome 36+, Firefox 39+, some mobile */
+    url('../fonts/zamicon-v1.4.18.woff') format('woff'),  /* IE 9+, Edge, Firefox 3.6+, Chrome 5+, Safari 5.1+ */
+    url('../fonts/zamicon-v1.4.18.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/zamicon-v1.4.18.svg') format('svg'); /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
 }
@@ -67,267 +67,273 @@
 .zamicon-back:before {
   content: '\F00D'
 }
-.zamicon-calendar:before {
+.zamicon-calendar-2:before {
   content: '\F00E'
 }
-.zamicon-camera-off:before {
+.zamicon-calendar:before {
   content: '\F00F'
 }
-.zamicon-camera-success:before {
+.zamicon-camera-off:before {
   content: '\F010'
 }
-.zamicon-camera-switch:before {
+.zamicon-camera-success:before {
   content: '\F011'
 }
-.zamicon-camera:before {
+.zamicon-camera-switch:before {
   content: '\F012'
 }
-.zamicon-cancel-bold:before {
+.zamicon-camera:before {
   content: '\F013'
 }
-.zamicon-cancel-in-circle:before {
+.zamicon-cancel-bold:before {
   content: '\F014'
 }
-.zamicon-cancel:before {
+.zamicon-cancel-in-circle:before {
   content: '\F015'
 }
-.zamicon-caret-sort-asc:before {
+.zamicon-cancel:before {
   content: '\F016'
 }
-.zamicon-caret-sort-desc:before {
+.zamicon-caret-sort-asc:before {
   content: '\F017'
 }
-.zamicon-caret-sort:before {
+.zamicon-caret-sort-desc:before {
   content: '\F018'
 }
-.zamicon-checkmark-bold:before {
+.zamicon-caret-sort:before {
   content: '\F019'
 }
-.zamicon-connect-tracker:before {
+.zamicon-checkmark-bold:before {
   content: '\F01A'
 }
-.zamicon-delete:before {
+.zamicon-connect-tracker:before {
   content: '\F01B'
 }
-.zamicon-download-2:before {
+.zamicon-delete:before {
   content: '\F01C'
 }
-.zamicon-download:before {
+.zamicon-download-2:before {
   content: '\F01D'
 }
-.zamicon-edit:before {
+.zamicon-download:before {
   content: '\F01E'
 }
-.zamicon-employee:before {
+.zamicon-edit:before {
   content: '\F01F'
 }
-.zamicon-error:before {
+.zamicon-employee:before {
   content: '\F020'
 }
-.zamicon-favorite-selected:before {
+.zamicon-error:before {
   content: '\F021'
 }
-.zamicon-favorite-unselected:before {
+.zamicon-favorite-selected:before {
   content: '\F022'
 }
-.zamicon-filter:before {
+.zamicon-favorite-unselected:before {
   content: '\F023'
 }
-.zamicon-flash:before {
+.zamicon-filter:before {
   content: '\F024'
 }
-.zamicon-forum:before {
+.zamicon-flash:before {
   content: '\F025'
 }
-.zamicon-gallery:before {
+.zamicon-forum:before {
   content: '\F026'
 }
-.zamicon-gift:before {
+.zamicon-gallery:before {
   content: '\F027'
 }
-.zamicon-hamburger:before {
+.zamicon-gift:before {
   content: '\F028'
 }
-.zamicon-heart:before {
+.zamicon-hamburger:before {
   content: '\F029'
 }
-.zamicon-help-circle:before {
+.zamicon-heart:before {
   content: '\F02A'
 }
-.zamicon-help-video:before {
+.zamicon-help-circle:before {
   content: '\F02B'
 }
-.zamicon-help:before {
+.zamicon-help-video:before {
   content: '\F02C'
 }
-.zamicon-history:before {
+.zamicon-help:before {
   content: '\F02D'
 }
-.zamicon-import:before {
+.zamicon-history:before {
   content: '\F02E'
 }
-.zamicon-info-2:before {
+.zamicon-import:before {
   content: '\F02F'
 }
-.zamicon-info:before {
+.zamicon-info-2:before {
   content: '\F030'
 }
-.zamicon-inspection:before {
+.zamicon-info:before {
   content: '\F031'
 }
-.zamicon-label:before {
+.zamicon-inspection:before {
   content: '\F032'
 }
-.zamicon-list-2:before {
+.zamicon-label:before {
   content: '\F033'
 }
-.zamicon-list:before {
+.zamicon-list-2:before {
   content: '\F034'
 }
-.zamicon-location-inverted:before {
+.zamicon-list:before {
   content: '\F035'
 }
-.zamicon-location-off:before {
+.zamicon-location-inverted:before {
   content: '\F036'
 }
-.zamicon-location:before {
+.zamicon-location-off:before {
   content: '\F037'
 }
-.zamicon-lock-closed:before {
+.zamicon-location:before {
   content: '\F038'
 }
-.zamicon-logout:before {
+.zamicon-lock-closed:before {
   content: '\F039'
 }
-.zamicon-mail:before {
+.zamicon-logout:before {
   content: '\F03A'
 }
-.zamicon-map:before {
+.zamicon-mail:before {
   content: '\F03B'
 }
-.zamicon-mic:before {
+.zamicon-map:before {
   content: '\F03C'
 }
-.zamicon-nfc-scan:before {
+.zamicon-mic:before {
   content: '\F03D'
 }
-.zamicon-notifications-new:before {
+.zamicon-nfc-scan:before {
   content: '\F03E'
 }
-.zamicon-notifications:before {
+.zamicon-notifications-new:before {
   content: '\F03F'
 }
-.zamicon-overview:before {
+.zamicon-notifications:before {
   content: '\F040'
 }
-.zamicon-password-hide:before {
+.zamicon-overview:before {
   content: '\F041'
 }
-.zamicon-password-show:before {
+.zamicon-password-hide:before {
   content: '\F042'
 }
-.zamicon-phone-call:before {
+.zamicon-password-show:before {
   content: '\F043'
 }
-.zamicon-phone:before {
+.zamicon-phone-call:before {
   content: '\F044'
 }
-.zamicon-plus:before {
+.zamicon-phone:before {
   content: '\F045'
 }
-.zamicon-position:before {
+.zamicon-plus:before {
   content: '\F046'
 }
-.zamicon-qr-scan:before {
+.zamicon-position:before {
   content: '\F047'
 }
-.zamicon-reload:before {
+.zamicon-qr-scan:before {
   content: '\F048'
 }
-.zamicon-remove-tracker:before {
+.zamicon-reload:before {
   content: '\F049'
 }
-.zamicon-remove:before {
+.zamicon-remove-tracker:before {
   content: '\F04A'
 }
-.zamicon-save:before {
+.zamicon-remove:before {
   content: '\F04B'
 }
-.zamicon-scan-off:before {
+.zamicon-reservation:before {
   content: '\F04C'
 }
-.zamicon-scan:before {
+.zamicon-save:before {
   content: '\F04D'
 }
-.zamicon-search:before {
+.zamicon-scan-off:before {
   content: '\F04E'
 }
-.zamicon-settings:before {
+.zamicon-scan:before {
   content: '\F04F'
 }
-.zamicon-shopping-cart:before {
+.zamicon-search:before {
   content: '\F050'
 }
-.zamicon-state-available:before {
+.zamicon-settings:before {
   content: '\F051'
 }
-.zamicon-state-idle:before {
+.zamicon-shopping-cart:before {
   content: '\F052'
 }
-.zamicon-state-in-use:before {
+.zamicon-state-available:before {
   content: '\F053'
 }
-.zamicon-state-repair:before {
+.zamicon-state-idle:before {
   content: '\F054'
 }
-.zamicon-state-transport-incoming:before {
+.zamicon-state-in-use:before {
   content: '\F055'
 }
-.zamicon-state-transport-outgoing:before {
+.zamicon-state-repair:before {
   content: '\F056'
 }
-.zamicon-state-transport:before {
+.zamicon-state-transport-incoming:before {
   content: '\F057'
 }
-.zamicon-state-unseen:before {
+.zamicon-state-transport-outgoing:before {
   content: '\F058'
 }
-.zamicon-success-circle:before {
+.zamicon-state-transport:before {
   content: '\F059'
 }
-.zamicon-success:before {
+.zamicon-state-unseen:before {
   content: '\F05A'
 }
-.zamicon-table:before {
+.zamicon-success-circle:before {
   content: '\F05B'
 }
-.zamicon-three-dots-vertical:before {
+.zamicon-success:before {
   content: '\F05C'
 }
-.zamicon-three-dots:before {
+.zamicon-table:before {
   content: '\F05D'
 }
-.zamicon-upload:before {
+.zamicon-three-dots-vertical:before {
   content: '\F05E'
 }
-.zamicon-user-add:before {
+.zamicon-three-dots:before {
   content: '\F05F'
 }
-.zamicon-user-inverted:before {
+.zamicon-upload:before {
   content: '\F060'
 }
-.zamicon-user-off:before {
+.zamicon-user-add:before {
   content: '\F061'
 }
-.zamicon-user-update:before {
+.zamicon-user-inverted:before {
   content: '\F062'
 }
-.zamicon-user:before {
+.zamicon-user-off:before {
   content: '\F063'
 }
-.zamicon-whatsapp:before {
+.zamicon-user-update:before {
   content: '\F064'
 }
-.zamicon-wifi-error:before {
+.zamicon-user:before {
   content: '\F065'
+}
+.zamicon-whatsapp:before {
+  content: '\F066'
+}
+.zamicon-wifi-error:before {
+  content: '\F067'
 }
